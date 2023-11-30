@@ -11,7 +11,6 @@ namespace DEMO1.DataDBContext
 
         [ForeignKey("category_id")]
         public int category_id {  get; set; }
-
         public category category { get; set; }
 
         [Column("name", TypeName = "Varchar(50)"), Required]
@@ -41,5 +40,6 @@ namespace DEMO1.DataDBContext
         public DateTime? updated_at { get; set; }
         [AllowNull]
         public DateTime? deleted_at { get; set; }
+
     }
 }

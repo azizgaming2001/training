@@ -10,7 +10,7 @@ namespace DEMO1.DataDBContext
 
         }
         public DbSet<category> Categories{ get; set; }
-        public DbSet<Course> Course { get; set; }
+        public DbSet<Course> Courses { get; set; }
         public DbSet<Topic> Topics { get; set; }
     }
 }

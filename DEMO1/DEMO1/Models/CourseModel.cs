@@ -6,14 +6,15 @@ namespace DEMO1.Models
     public class CourseModel
     {
         public List<CourseDetail> CourseDetailLists { get; set; }
+        
     }
 
     public class CourseDetail
     {
         public int id { get; set; }
         [Required(ErrorMessage = "Enter name,please")]
+        public int category_id { get; set; }
         public string name { get; set; }
-        public string category_id {  get; set; }
 
         public string? description { get; set; }
 
